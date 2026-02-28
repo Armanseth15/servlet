@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Servlet Practical</title>
+</head>
+<body>
+<h1>Section A: doGET() Based Tasks</h1>
+
+<h2>GET Form</h2>
+<form action="process" method="get">
+    Name: <input type="text" name="name"><br><br>
+    Email: <input type="email" name="email"><br><br>
+    <input type="submit" value="Submit GET">
+</form>
+
+<hr>
+
+<h2>Addition (GET)</h2>
+<form action="process" method="get">
+    Number 1: <input type="text" name="add1"><br><br>
+    Number 2: <input type="text" name="add2"><br><br>
+    <input type="submit" value="Add">
+</form>
+
+<hr>
+
+<h2>Celsius to Fahrenheit</h2>
+<form action="process" method="get">
+    Celsius: <input type="text" name="celsius"><br><br>
+    <input type="submit" value="Convert">
+</form>
+
+<hr>
+
+<h2>Student Details</h2>
+<form action="process" method="get">
+    Name: <input type="text" name="sname"><br><br>
+    Roll No: <input type="text" name="roll"><br><br>
+    Course: <input type="text" name="course"><br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<hr>
+
+<h2>Greater Number</h2>
+<form action="process" method="get">
+    Number 1: <input type="text" name="g1"><br><br>
+    Number 2: <input type="text" name="g2"><br><br>
+    <input type="submit" value="Check">
+</form>
+
+<hr>
+
+<h2>Simple Interest</h2>
+<form action="process" method="get">
+    Principal: <input type="text" name="p"><br><br>
+    Rate: <input type="text" name="r"><br><br>
+    Time: <input type="text" name="t"><br><br>
+    <input type="submit" value="Calculate">
+</form>
+
+<hr>
+
+<h2>Hidden Field Example</h2>
+<form action="process" method="get">
+    <input type="hidden" name="userId" value="101">
+    <input type="submit" value="Send Hidden">
+</form>
+
+<hr>
+
+<h2>Select Course</h2>
+<form action="process" method="get">
+    <select name="courseSelect">
+        <option value="BCA">BCA</option>
+        <option value="BTech">BTech</option>
+        <option value="MBA">MBA</option>
+    </select>
+    <input type="submit" value="Select">
+</form>
+
+<hr>
+
+<h2>Select Skills</h2>
+<form action="process" method="get">
+    <input type="checkbox" name="skills" value="Java"> Java
+    <input type="checkbox" name="skills" value="Python"> Python
+    <input type="checkbox" name="skills" value="C++"> C++
+    <br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<hr>
+
+<hr>
+<h1>Section B: doPost() Based Tasks</h1>
+
+<!-- 1. Login Form -->
+<h2>1. Login Form</h2>
+<form action="process" method="post">
+    Username: <input type="text" name="username"><br><br>
+    Password: <input type="password" name="password"><br><br>
+    <input type="submit" value="Login">
+</form>
+
+<hr>
+
+<!-- 2. Student Registration -->
+<h2>2. Student Registration</h2>
+<form action="process" method="post">
+    Name: <input type="text" name="regName"><br><br>
+    Age: <input type="text" name="age"><br><br>
+    Course: <input type="text" name="regCourse"><br><br>
+    Gender:
+    <input type="radio" name="gender" value="Male"> Male
+    <input type="radio" name="gender" value="Female"> Female
+    <br><br>
+    <input type="submit" value="Register">
+</form>
+
+<hr>
+
+<!-- 3. Multiplication -->
+<h2>3. Multiplication</h2>
+<form action="process" method="post">
+    Number 1: <input type="text" name="mul1"><br><br>
+    Number 2: <input type="text" name="mul2"><br><br>
+    <input type="submit" value="Multiply">
+</form>
+
+<hr>
+
+<!-- 4. Feedback Form -->
+<h2>4. Feedback</h2>
+<form action="process" method="post">
+    Name: <input type="text" name="fbName"><br><br>
+    Comments: <textarea name="comments"></textarea><br><br>
+    <input type="submit" value="Submit Feedback">
+</form>
+
+<hr>
+
+<!-- 5. Employee Registration -->
+<h2>5. Employee Registration</h2>
+<form action="process" method="post">
+    Name: <input type="text" name="empName"><br><br>
+    Salary: <input type="text" name="salary"><br><br>
+    Department: <input type="text" name="department"><br><br>
+    <input type="submit" value="Register Employee">
+</form>
+
+<hr>
+
+<!-- 6. Hobbies Checkbox -->
+<h2>6. Select Hobbies</h2>
+<form action="process" method="post">
+    <input type="checkbox" name="hobbies" value="Reading"> Reading
+    <input type="checkbox" name="hobbies" value="Gaming"> Gaming
+    <input type="checkbox" name="hobbies" value="Sports"> Sports
+    <br><br>
+    <input type="submit" value="Submit Hobbies">
+</form>
+
+<hr>
+
+<!-- 7. Validation Form -->
+<h2>7. Validation Form</h2>
+<form action="process" method="post">
+    Name: <input type="text" name="valName"><br><br>
+    Email: <input type="text" name="valEmail"><br><br>
+    <input type="submit" value="Validate">
+</form>
+
+<hr>
+
+<!-- 8. Redirect Example -->
+<h2>8. Redirect After Submission</h2>
+<form action="process" method="post">
+    Enter Name: <input type="text" name="redirectName"><br><br>
+    <input type="submit" value="Submit & Redirect">
+</form>
+
+<hr>
+
+<!-- 9. Area of Rectangle -->
+<h2>9. Area of Rectangle</h2>
+<form action="process" method="post">
+    Length: <input type="text" name="length"><br><br>
+    Breadth: <input type="text" name="breadth"><br><br>
+    <input type="submit" value="Calculate Area">
+</form>
+
+<hr>
+
+<!-- 10. Common processRequest() -->
+<h2>10. Common Servlet Example</h2>
+<form action="process" method="post">
+    Enter Message: <input type="text" name="commonMsg"><br><br>
+    <input type="submit" value="Send">
+</form>
+
+<hr>
+
+</body>
+</html>
